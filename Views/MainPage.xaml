@@ -1,0 +1,14 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SaveUp.ViewModels"
+             x:Class="SaveUp.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Button Text="Add Product" Command="{Binding NavigateToAddProductCommand}" />
+        <Button Text="View Products" Command="{Binding NavigateToProductListCommand}" />
+    </StackLayout>
+</ContentPage>
